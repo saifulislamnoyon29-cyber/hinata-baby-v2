@@ -28,7 +28,7 @@ module.exports = {
     
     try {
       const apiUrl = await mahmud();
-      const res = await axios.get(`${apiUrl}/api/album/videos/onepiece?userID=${event.senderID}`);
+      const res = await axios.get(`${apiUrl}/api/album/mahmud/videos/onepiece?userID=${event.senderID}`);
       if (!res.data.success || !res.data.videos.length)
         return api.sendMessage("❌ | No onepiece videos found.", event.threadID, event.messageID);
 
